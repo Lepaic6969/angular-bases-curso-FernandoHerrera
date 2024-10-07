@@ -1,0 +1,33 @@
+<h1>Game of Thrones</h1>
+<dl> <!--Creamos una lista de descripción o de definición-->
+
+  <dt>Nombre:</dt> <!--Término o palabra clave-->
+  <dd>{{name}}</dd>  <!--Descripción del término-->
+
+  <dt>Edad:</dt>
+  <dd>{{age}}</dd>
+
+  <dt>Método:</dt>
+  <dd>{{getHeroDescription()}} </dd>
+
+  <dt>Capitalizado:</dt>
+  <dd>{{capitalizedName}}</dd>
+</dl>
+
+<button
+  *ngIf="name!=='Tyrion Lannister'"
+  (click)="changeHero()"
+  class="btn btn-primary mx-2" >
+  Cambiar Nombre
+</button>
+<button
+  *ngIf="age!==26"
+  (click)="changeAge()"
+  class="btn btn-primary mx-2" >
+  Cambiar Edad
+</button>
+<button
+  (click)="resetForm()"
+  class="btn btn-primary " >
+  Reset
+</button>
