@@ -1,0 +1,15 @@
+<h1>DBZ Personajes</h1>
+<hr>
+
+<div class="row">
+
+  <div class="col">
+    <!-- Aquí debemos escuhar el evento y eliminamos el elemento de la lista de personajes del main-page -->
+      <dbz-list (onDelete)="onDeleteCharacter($event)" [characterList]="characters"></dbz-list>
+  </div>
+
+  <div class="col">
+    <dbz-add-character (onCreate)="onNewCharacter($event)"></dbz-add-character>
+  </div>
+
+</div>

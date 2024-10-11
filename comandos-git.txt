@@ -1,0 +1,8 @@
+git add . ->Alista todo para tomar la fotografía de mi código
+git commit -m "algún mensaje" -> Le toma la fotografía a nuestro código
+git checkout -- . -> Regresa mi código a la versión desde la última fotografía que tomé de él.
+git branch -M main -> Le cambias el nombre a la rama
+git remote add origin https://... -> Agrega un origen(destino) remoto(EN la nube de GitHub) de tu
+					repositorio local
+
+git push origin main -> Manda una copia de tu código al origen remoto de la rama main
